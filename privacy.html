@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · Petasos</title>
+  <meta name="description" content="How the Petasos iOS app handles your data. It stays on your device and goes only to the Hermes Agent gateway you run.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&amp;family=Instrument+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;family=Martian+Mono:wdth,wght@75..112.5,500..800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ag.css">
+</head>
+<body>
+  <a class="ag-skip" href="#main">Skip to content</a>
+  <div class="ag-page">
+    <header>
+      <nav class="ag-nav ag-plate" aria-label="Primary">
+        <a class="ag-brand" href="./">PETASOS™</a>
+        <a class="ag-micro" href="./">Overview</a>
+        <a class="ag-micro" href="privacy.html" aria-current="page">Privacy</a>
+        <a class="ag-micro" href="support.html">Support</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div class="ag-header">
+        <h1 class="ag-title">Privacy<sup>™</sup></h1>
+        <p class="ag-kana" lang="ja">プライバシー / ポリシー</p>
+        <p class="ag-micro ag-micro--acid">Effective 25 October 2026 · applies to the Petasos iOS app</p>
+      </div>
+
+      <section class="ag-card">
+        <h2>In short</h2>
+        <p>Petasos has no accounts, analytics, ads or third parties.</p>
+        <p>It stores your gateway URL and API key on the device.</p>
+        <p>It sends data only to the gateway you run yourself.</p>
+        <p>The developer never receives any data.</p>
+      </section>
+
+      <section class="ag-card">
+        <h2>Who is responsible</h2>
+        <p>Lennart Grabowski develops and publishes Petasos.</p>
+        <p>Send questions through the <a href="support.html">support page</a>.</p>
+      </section>
+
+      <section class="ag-card">
+        <h2>What the app stores on your device</h2>
+        <table class="ag-table">
+          <thead>
+            <tr>
+              <th scope="col">Data</th>
+              <th scope="col">Where</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gateway URL</td>
+              <td>App settings, shared with the app's extensions</td>
+              <td>Set by pairing or manual entry.</td>
+            </tr>
+            <tr>
+              <td>API key</td>
+              <td>Keychain</td>
+              <td>Set by pairing or manual entry.</td>
+            </tr>
+            <tr>
+              <td>Drafts, last-seen notice, tab and filters</td>
+              <td>On the device</td>
+              <td>Stays on the device.</td>
+            </tr>
+            <tr>
+              <td>Face ID preference</td>
+              <td>On the device</td>
+              <td>Biometric data never leaves the system.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Deleting the app removes everything it stored.</p>
+        <p>Disconnect removes the API key.</p>
+      </section>
+
+      <section class="ag-card">
+        <h2>Where data goes</h2>
+        <p>The app sends every request to the gateway URL you configured, and to no other server.</p>
+        <p>The gateway receives messages, attachments, approvals and job changes.</p>
+        <p>With the <code>hermes_app</code> plugin, it also receives a device identifier and search text.</p>
+        <p>The gateway is your own server. How it handles data depends on how you run it and on Hermes Agent, not on the developer.</p>
+        <p>The app loads no remote content, fonts or SDKs.</p>
+      </section>
+
+      <section class="ag-card">
+        <h2>Permissions</h2>
+        <ul>
+          <li>Camera: scans pairing codes and takes photos for attachments. The app stores nothing from the camera.</li>
+          <li>Local network: reaches your gateway on your network.</li>
+          <li>Notifications: created on the device from gateway data. No developer server sends them.</li>
+          <li>Face ID: optional. Biometric data never leaves the system.</li>
+        </ul>
+      </section>
+
+      <section class="ag-card">
+        <h2>Children</h2>
+        <p>Petasos is not directed at children under 13. It collects nothing.</p>
+      </section>
+
+      <section class="ag-card">
+        <h2>Changes</h2>
+        <p>Changes are published on this page with a new effective date.</p>
+        <p>The history is visible at <a href="https://github.com/grabowskil/petasos-site/commits/main">the petasos-site repository history</a>.</p>
+      </section>
+    </main>
+
+    <footer class="ag-footer">
+      <p class="ag-micro">Petasos™ AG-SYS · your gateway · your data · <a href="privacy.html">privacy</a> · <a href="support.html">support</a></p>
+    </footer>
+  </div>
+</body>
+</html>

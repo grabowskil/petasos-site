@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Petasos</title>
+<meta name="description" content="Support for Petasos: requirements, pairing, common problems and how to report an issue.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Instrument+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Martian+Mono:wdth,wght@75..112.5,500..800&display=swap">
+<link rel="stylesheet" href="ag.css">
+</head>
+<body>
+<a class="ag-skip" href="#main">Skip to content</a>
+<div class="ag-page">
+<header>
+<nav class="ag-nav ag-plate" aria-label="Primary">
+<a class="ag-brand" href="./">PETASOS™</a>
+<a class="ag-micro" href="./">Overview</a>
+<a class="ag-micro" href="privacy.html">Privacy</a>
+<a class="ag-micro" href="support.html" aria-current="page">Support</a>
+</nav>
+</header>
+<main id="main">
+<div class="ag-header">
+<h1 class="ag-title">Support<sup>™</sup></h1>
+<p class="ag-kana" lang="ja">サポート / ヘルプ</p>
+<p class="ag-micro ag-micro--acid">Requirements ▸ pairing ▸ reporting</p>
+</div>
+
+<div class="ag-grid">
+<section class="ag-card">
+<h2>Requirements</h2>
+<ul>
+<li>iOS or iPadOS 18.</li>
+<li>A Hermes Agent gateway 0.22.2 or newer, with the API server enabled.</li>
+<li>The <code>hermes_app</code> plugin for Inbox, attachments, search and QR pairing.</li>
+</ul>
+</section>
+<section class="ag-card">
+<h2>Pairing</h2>
+<p>Run <code>hermes app pair</code> on the gateway, then scan the code from Connect or the Camera app.</p>
+<p>The code carries your gateway URL and API key. Treat it like a password. If you cannot scan it, enter the URL and key by hand.</p>
+</section>
+<section class="ag-card">
+<h2>Common problems</h2>
+<h3>Invalid API key</h3>
+<p>The gateway answers 401 when the key in the app differs from <code>API_SERVER_KEY</code> on the gateway. Enter the same key, or pair again.</p>
+<h3>Cannot reach the server</h3>
+<p>Check the URL scheme and port. Allow local network access for Petasos in iOS Settings. If you use a VPN or a tailnet, make sure it is connected. An HTTPS certificate must be trusted by iOS.</p>
+<h3>Inbox, attachments or search are missing</h3>
+<p>The plugin is probably not installed or not enabled. Check with <code>hermes plugins list</code>, then restart the gateway with <code>hermes gateway restart</code>.</p>
+<h3>No notifications while the app is closed</h3>
+<p>The App Store build refreshes in the background when iOS allows it. Open the app to catch up.</p>
+</section>
+<section class="ag-card">
+<h2>Reporting</h2>
+<p>Open an issue at <a href="https://github.com/grabowskil/petasos-site/issues">github.com/grabowskil/petasos-site/issues</a>. Include your iOS version, the app version from Settings, and the Hermes version from <code>hermes --version</code>.</p>
+<p>Never paste your API key.</p>
+</section>
+<section class="ag-card">
+<h2>Plugin source</h2>
+<p>The <code>hermes_app</code> gateway plugin is published at <a href="https://github.com/grabowskil/hermes-app-plugin">github.com/grabowskil/hermes-app-plugin</a>.</p>
+</section>
+</div>
+</main>
+<footer class="ag-footer">
+<p class="ag-micro">Petasos™ AG-SYS · your gateway · your data · <a href="privacy.html">privacy</a> · <a href="support.html">support</a></p>
+</footer>
+</div>
+</body>
+</html>

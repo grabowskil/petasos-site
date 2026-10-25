@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petasos: Agent Command</title>
+<meta name="description" content="Petasos is an iOS and iPadOS app for a Hermes Agent gateway you run yourself. No account, no cloud in between, no analytics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Instrument+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Martian+Mono:wdth,wght@75..112.5,500..800&display=swap">
+<link rel="stylesheet" href="ag.css">
+</head>
+<body>
+<a class="ag-skip" href="#main">Skip to content</a>
+<div class="ag-page">
+<header>
+<nav class="ag-nav ag-plate" aria-label="Primary">
+<a class="ag-brand" href="./">PETASOS™</a>
+<a class="ag-micro" href="./" aria-current="page">Overview</a>
+<a class="ag-micro" href="privacy.html">Privacy</a>
+<a class="ag-micro" href="support.html">Support</a>
+</nav>
+</header>
+<main id="main">
+<div class="ag-header">
+<h1 class="ag-title">Agent Command<sup>™</sup></h1>
+<p class="ag-kana" lang="ja">ペタソス / エージェント・コマンド</p>
+<p class="ag-micro ag-micro--acid">iOS client ▸ Hermes Agent gateway ▸ your hardware, your keys</p>
+</div>
+
+<div class="ag-frame">
+<pre class="ag-ascii" aria-hidden="true">                  __..------..__
+             _.-''//==.\\\\\\\\''-._
+          _.'/////////=.\\\\\\\\\\\'._
+        .'////////////'=.\\\\\\\\\\\\\'.
+      .'//////////////// '=.[]\\\\\\\\\\'.
+     /////   /////////////  |[]|\\\\\\\\\\\.
+    ////   ////////////////  |[]|\\\\\\\\\\\\.
+   |//   ///////////////////.-''''-.\\\\\\\\\\
+  |//  ////////////////////.' .--. '.\\\\\\\\\
+  |/ /////////////////////( .' @@ '. )\\\\\\\\
+  |(//|\'-._////////////(  ( @@@@ )  )\\\\\\|
+  ||(/|      '-.__\\\\\\(   ( @@@@ )  \\\\\\|
+  |(//|   |      (\\\\\\(   '.@@.'  ) \\\\|\|
+  ||(/|   | -.__,(\\\\\\'.  '--'  .'  |\\ \\|
+   |(/|   |  '''  (\\\\\\'-.____.-'   | || ||
+   ''''(| |       (\\\\\\.:|||||\|| \||||\\ |
+       (| /        (\\\\\.:|||||||||||||||\\|
+       (|&lt;_,        (\\\\ .:||\|||||||| || |
+       (|   (-      (\\\\ .:||||||||\ ||| \|
+       (|     \_)    (\\\  .|\||||||||||\||
+       (|////// '-.\\\\\\  ''''''''''''''''
+       ||////////////////|     .::  |
+        |'|/////|///|//|'|      .:: |
+         ' '|' '|' '|' ' |       .:  |
+                        _.-''''''''''''-._</pre>
+<div>
+<p class="ag-micro ag-micro--moss">What it is</p>
+<p>Petasos is an iOS and iPadOS app for a <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent</a> gateway you run yourself. It talks only to the gateway you pair it with. No account, no cloud in between, no analytics.</p>
+<p><span class="ag-badge">Coming to the App Store</span></p>
+<p><a class="ag-button ag-button--outline" href="https://github.com/grabowskil/hermes-app-plugin">Gateway plugin</a></p>
+</div>
+</div>
+
+<div class="ag-grid">
+<section class="ag-card">
+<h2>On your phone</h2>
+<ul>
+<li>Sessions and streaming chat, with tool cards and plan checklists.</li>
+<li>Approvals from chat or from a notification.</li>
+<li>Jobs.</li>
+<li>Host status, toolsets and skills.</li>
+<li>Inbox, attachments and search.</li>
+<li>Share sheet and widget.</li>
+</ul>
+</section>
+<section class="ag-card">
+<h2>On your gateway</h2>
+<p>Install the plugin, restart the gateway and pair the app:</p>
+<pre class="ag-code"><code>hermes plugins install https://github.com/grabowskil/hermes-app-plugin.git
+hermes gateway restart
+hermes app pair</code></pre>
+<p>Scan the QR code from Connect or the Camera app. The manual URL and key still work. Without the plugin you still get sessions, chat, jobs and host.</p>
+</section>
+<section class="ag-card">
+<h2>Your data stays yours</h2>
+<p>One gateway URL and one API key live on the device. Everything else lives on your gateway. There is no Petasos server, no telemetry and no account. <a href="privacy.html">Read the privacy policy</a>.</p>
+</section>
+<section class="ag-card">
+<h2>Need a hand?</h2>
+<p>Pairing, connection errors and common fixes are on the <a href="support.html">support page</a>.</p>
+</section>
+</div>
+</main>
+<footer class="ag-footer">
+<p class="ag-micro">Petasos™ AG-SYS · your gateway · your data · <a href="privacy.html">privacy</a> · <a href="support.html">support</a></p>
+</footer>
+</div>
+</body>
+</html>
